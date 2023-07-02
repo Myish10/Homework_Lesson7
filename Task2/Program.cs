@@ -57,11 +57,11 @@ void PosNum(int[,] array, int rows, int cols, int num)
                 if (k == num)
                 {
                     Console.WriteLine($"Число с номером {num} --> {array[i, j]}");
-                    break;
+                    // break;
                 }
-                else k++;
+                k++;
             }
-            if (k == num) break;
+            // if (k == num) break;
         }
     }
 }
@@ -77,4 +77,3 @@ int[,] my2DArray = Create2DArray(rows, columns);
 Fill2DArray(my2DArray, minValue, maxValue);
 Print2DArray(my2DArray);
 PosNum(my2DArray, rows, columns, number);
- 
