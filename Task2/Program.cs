@@ -54,14 +54,9 @@ void PosNum(int[,] array, int rows, int cols, int num)
         {
             for (int j = 0; j < array.GetLength(1); j++)
             {
-                if (k == num)
-                {
-                    Console.WriteLine($"Число с номером {num} --> {array[i, j]}");
-                    // break;
-                }
+                if (k == num) Console.WriteLine($"Число с номером {num} --> {array[i, j]}");
                 k++;
             }
-            // if (k == num) break;
         }
     }
 }
